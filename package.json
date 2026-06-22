@@ -1,0 +1,50 @@
+{
+  "name": "browseruse-vibechat-poc",
+  "version": "0.3.0",
+  "description": "Use a real browser from your terminal with Playwright \u2014 built as a VibeChat proof of concept.",
+  "type": "module",
+  "bin": {
+    "term-browser": "./bin/term-browser-tui.js",
+    "term-browser-classic": "./bin/term-browser.js"
+  },
+  "scripts": {
+    "start": "node ./bin/term-browser-tui.js",
+    "tui": "node ./bin/term-browser-tui.js",
+    "classic": "node ./bin/term-browser.js",
+    "browser": "node ./bin/term-browser-tui.js",
+    "check": "node --check ./bin/term-browser.js && node --check ./bin/term-browser-tui.js",
+    "smoke": "TERM=xterm node ./bin/term-browser-tui.js --smoke-test",
+    "setup:browsers": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "blessed": "latest",
+    "playwright": "latest",
+    "pngjs": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "vibechat",
+    "proof-of-concept",
+    "terminal-browser",
+    "playwright",
+    "blessed",
+    "tui",
+    "browser",
+    "cli",
+    "terminal",
+    "automation",
+    "developer-tools"
+  ],
+  "homepage": "https://github.com/angdwww/BrowserUse-VibeChatPOC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angdwww/BrowserUse-VibeChatPOC.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angdwww/BrowserUse-VibeChatPOC/issues"
+  }
+}
